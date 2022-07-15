@@ -26,26 +26,27 @@ void setup()
   xLeftEye = xCenter-smallerDimension*1/4;
   yLeftEye = yCenter-smallerDimension*1/4;
   xRightEye = xCenter+smallerDimension*1/4;
-  yRightEye = yCenter+smallerDimension*1/4;
+  yRightEye = yCenter- smallerDimension*1/4;
   eyeDiameter = smallerDimension*1/8;
-  //xNoseBridge = ;
-  //yNoseBridge = ;
-  //xLeftNostril = ;
-  //yLeftNostril = ;
-  //xRightNostril = ;
-  //yRightNostril = ;
-  xLeftMouth = xLeftEye;
-  yLeftMouth =  yCenter+smallerDimension*1/4;
+  xNoseBridge = xCenter ;
+  yNoseBridge = yCenter - smallerDimension*1/8 ;
+  xLeftNostril =xCenter-smallerDimension * 1/8 ;
+  yLeftNostril = yCenter + smallerDimension *1/8 ;
+  xRightNostril = xCenter+smallerDimension*1/8;
+  yRightNostril = yLeftNostril;
+  xLeftMouth =  xLeftEye;
+  yLeftMouth = yCenter+smallerDimension*1/4;
   xRightMouth = xRightEye;
-  //yRightMouth = ;
+  yRightMouth = yLeftMouth;
   //xMeasle = ;
-  //yMeasle = ;
-  //measleDiameter = ;
+  //
+  measleDiameter = smallerDimension*1/50;
   //
 }//End setup
 //
 void draw()
 {
+  
   ellipse(xFace, yFace, widthDiameterFace, heightDiameterFace);
   ellipse(xLeftEye, yLeftEye, eyeDiameter, eyeDiameter);
   ellipse(xRightEye, yRightEye, eyeDiameter, eyeDiameter);
