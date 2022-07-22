@@ -44,12 +44,12 @@ Boolean nightMode=true;
 //
 //String Variables
 String stop = "Click to start or stop measles";
-String addBlue = "Click to add nightmode color and remove all measles";
-String noBlue = "Click for no nightmode color and removel all measles";
+String addBlue = "Click to add nightmode color and clear measles";
+String noBlue = "Click for no nightmode color and clear measlse";
 
 int textSize;
 PFont textFont;
-boolean measleOn = true;
+boolean measleOn = false;
 //
 void setup()
 {
